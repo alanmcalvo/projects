@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Jinx</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>How to Jinx</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="show-matchups">Matchups</a></li>
+                <li><a href="#" id="show-skins">Skins</a></li>
+                <li><a href="#" id="show-habilidades">Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Matchups Section -->
+        <section id="matchups" class="content-section">
+            <h2>Matchups</h2>
+            <div id="matchups-details" class="details">
+                <!-- Detalhes dos matchups serão injetados aqui -->
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section id="habilidades" class="content-section">
+            <h2>Habilidades</h2>
+            <div id="habilidades-details" class="details">
+                <!-- Detalhes das habilidades serão injetados aqui -->
+            </div>
+        </section>
+
+        <!-- Modal for Skins -->
+        <div id="skins-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="carousel">
+                    <button class="arrow prev">&lt;</button>
+                    <div class="carousel-images">
+                        <div class="carousel-item">
+                            <img src="images/classic-large.png" alt="Classic Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/arcane-large.png" alt="Arcane Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/crimecity-large.png" alt="Crime City">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/firecracker-large.png" alt="Firecracker Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/zombie-large.png" alt="Zombie Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/starguardian-large.png" alt="Guardiã Estrelar Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/elf-large.png" alt="Elfica Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/odisseia-large.png" alt="Odisseia Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/projeto-large.png" alt="Project Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/battlecat-large.png" alt="BattleCat Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/prestige-large.png" alt="Prestige Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/cafecutie-large.png" alt="Cafe Skin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/t1-large.png" alt="T1 Skin">
+                        </div>
+                    </div>
+                    <button class="arrow next">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Matchups -->
+        <div id="matchups-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-matchups">&times;</span>
+                <div class="modal-header">
+                    <input type="text" id="search-adc" placeholder="Pesquisar ADC...">
+                </div>
+                <div class="adc-grid">
+                    <div class="adc-item" data-adc="aphelios">
+                        <img src="images/aphelios.png" alt="Aphelios">
+                        <p>Aphelios</p>
+                    </div>
+                    <div class="adc-item" data-adc="ashe">
+                        <img src="images/ashe.png" alt="Ashe">
+                        <p>Ashe</p>
+                    </div>
+                    <div class="adc-item" data-adc="caitlyn">
+                        <img src="images/caitlyn.png" alt="Caitlyn">
+                        <p>Caitlyn</p>
+                    </div>
+                    <div class="adc-item" data-adc="draven">
+                        <img src="images/draven.png" alt="Draven">
+                        <p>Draven</p>
+                    </div>
+                    <div class="adc-item" data-adc="jhin">
+                        <img src="images/jhin.png" alt="Jhin">
+                        <p>Jhin</p>
+                    </div>
+                    <div class="adc-item" data-adc="kaisa">
+                        <img src="images/kaisa.png" alt="Kai'Sa">
+                        <p>Kai'Sa</p>
+                    </div>
+                    <div class="adc-item" data-adc="kogmaw">
+                        <img src="images/kogmaw.png" alt="Kog'Maw">
+                        <p>Kog'Maw</p>
+                    </div>
+                    <div class="adc-item" data-adc="missfortune">
+                        <img src="images/missfortune.png" alt="Miss Fortune">
+                        <p>Miss Fortune</p>
+                    </div>
+                    <div class="adc-item" data-adc="samira">
+                        <img src="images/samira.png" alt="Samira">
+                        <p>Samira</p>
+                    </div>
+                    <div class="adc-item" data-adc="tristana">
+                        <img src="images/tristana.png" alt="Tristana">
+                        <p>Tristana</p>
+                    </div>
+                    <div class="adc-item" data-adc="twitch">
+                        <img src="images/twitch.png" alt="Twitch">
+                        <p>Twitch</p>
+                    </div>
+                    <div class="adc-item" data-adc="varus">
+                        <img src="images/varus.png" alt="Varus">
+                        <p>Varus</p>
+                    </div>
+                    <div class="adc-item" data-adc="vayne">
+                        <img src="images/vayne.png" alt="Vayne">
+                        <p>Vayne</p>
+                    </div>
+                    <div class="adc-item" data-adc="xayah">
+                        <img src="images/xayah.png" alt="Xayah">
+                        <p>Xayah</p>
+                    </div>
+                    <div class="adc-item" data-adc="zeri">
+                        <img src="images/zeri.png" alt="Zeri">
+                        <p>Zeri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for ADC Details -->
+        <div id="adc-details-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-adc-details">&times;</span>
+                <h2 id="adc-name">Nome do ADC</h2>
+                <div id="adc-details">Detalhes sobre como jogar contra o ADC.</div>
+            </div>
+        </div>
+
+        <!-- Lobby Image and Map -->
+        <div id="lobby-container">
+            <img src="images/lobby.png" alt="Lobby" usemap="#lobby-map">
+            <map name="lobby-map">
+                <area id="enemy-1" shape="rect" coords="1188,320,1250,260" alt="Inimigo 1" title="Inimigo 1">
+                <area id="skins-area" shape="rect" coords="903,582,378,502" alt="Skins" title="Skins">
+            </map>
+        </div>
+    </main>
+    <footer>
+        Developed by Alan Milan © <a href="https://www.linkedin.com/in/alan-milan">LinkedIn</a>, <a href="https://instagram.com/alanmilan_">Instagram</a>
+      </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
