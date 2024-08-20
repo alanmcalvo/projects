@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Adiciona listeners para os círculos dos inimigos
+    
     document.querySelectorAll('area').forEach(area => {
         area.addEventListener('click', (event) => {
             event.preventDefault();

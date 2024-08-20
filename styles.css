@@ -49,7 +49,7 @@ main {
 }
 
 .content-section {
-    display: none; /* Mantém as seções ocultas até serem exibidas */
+    display: none; 
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
@@ -105,11 +105,11 @@ main {
     right: 10px;
 }
 
-/* Estilos para o modal de Skins */
+
 #skins-modal {
     display: none;
     position: fixed;
-    z-index: 1000; /* Garante que o modal esteja no topo */
+    z-index: 1000; 
     left: 0;
     top: 0;
     width: 100%;
@@ -119,12 +119,12 @@ main {
 }
 
 #skins-modal .modal-content {
-    margin: 10% auto; /* Ajustado para menor distância do topo */
-    padding: 15px; /* Reduzido o padding */
+    margin: 10% auto; 
+    padding: 15px; 
     width: 100%;
-    max-width: 900px; /* Largura máxima reduzida */
+    max-width: 900px; 
     position: relative;
-    z-index: 1001; /* Garante que o conteúdo do modal esteja acima do fundo do modal */
+    z-index: 1001; 
 }
 
 #skins-modal .close {
@@ -140,11 +140,11 @@ main {
     cursor: pointer;
 }
 
-/* Estilos para o modal de Matchups */
+
 #matchups-modal {
     display: none;
     position: fixed;
-    z-index: 1000; /* Garante que o modal esteja no topo */
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -154,13 +154,13 @@ main {
 }
 
 #matchups-modal .modal-content {
-    background-color: #3a0a6d; /* Fundo roxo escuro */
+    background-color: #3a0a6d;
     margin: 5% auto;
     padding: 20px;
-    border: 3px solid #fff; /* Borda branca menor */
-    border-radius: 15px; /* Bordas arredondadas */
-    width: 70%; /* Reduzir a largura do modal */
-    max-width: 600px; /* Largura máxima reduzida */
+    border: 3px solid #fff; 
+    border-radius: 15px; 
+    width: 70%; 
+    max-width: 600px; 
     box-sizing: border-box;
     position: relative;
 }
@@ -196,7 +196,7 @@ main {
     border-radius: 5px;
     font-family: "Bangers";
     border: 2px solid #fff;
-    background-color: #2c084b; /* Cor de fundo escura */
+    background-color: #2c084b; 
     color: #f6eaea;
     text-align: center;
 }
@@ -204,42 +204,42 @@ main {
 .adc-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; 
+    justify-content: center; 
 }
 
 .adc-item {
     text-align: center;
-    width: 80px; /* Largura reduzida dos itens */
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+    width: 80px; 
+    box-sizing: border-box; 
 }
 
 .adc-item img {
-    width: 100%; /* Faz a imagem ocupar toda a largura do item */
-    height: auto; /* Mantém a proporção da imagem */
-    border: 3px solid #fff; /* Borda branca fina ao redor das imagens */
-    border-radius: 6px; /* Bordas arredondadas */
-    transition: transform 0.3s ease, border-color 0.3s ease; /* Adiciona transição suave para a cor da borda */
+    width: 100%; 
+    height: auto; 
+    border: 3px solid #fff; 
+    border-radius: 6px; 
+    transition: transform 0.3s ease, border-color 0.3s ease; 
     gap: 25px;
 }
 
 .adc-item img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
-    border-color: orange; /* Muda a cor da borda para laranja */
+    transform: scale(1.1); 
+    border-color: orange; 
 }
 
 .adc-item p {
-    margin-top: 5px; /* Margem superior ajustada para o texto */
+    margin-top: 5px; 
     color: #f6eaea;
-    font-size: 18px; /* Tamanho da fonte ajustado */
-    text-align: center; /* Centraliza o texto */
+    font-size: 18px; 
+    text-align: center;
 }
 
-/* Estilos para o modal de Detalhes do ADC */
+
 #adc-details-modal {
     display: none;
     position: fixed;
-    z-index: 1000; /* Garante que o modal esteja no topo */
+    z-index: 1000; 
     left: 0;
     top: 0;
     width: 100%;
@@ -250,21 +250,21 @@ main {
 
 #adc-details-modal .modal-content {
     margin: 10% auto;
-    padding: 5px; /* Reduzido o padding */
-    max-height: 80%; /* Limita a altura máxima */
+    padding: 5px; 
+    max-height: 80%; 
     width: 100%;
     max-width: 600px;
     background-color: #3a0a6d;
-    border: 2px solid #9b59b6; /* Borda roxa */
+    border: 2px solid #9b59b6; 
     border-radius: 15px;
     position: relative;
-    z-index: 1001; /* Garante que o conteúdo do modal esteja acima do fundo do modal */
-    font-size: 25px; /* Reduzido o tamanho da fonte */
+    z-index: 1001; 
+    font-size: 25px; 
     color: #f6eaea;
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    overflow-y: auto; 
 }
 
-/* Estilos para o botão de fechar o modal */
+
 #adc-details-modal .close {
     position: absolute;
     top: 10px;
@@ -282,7 +282,7 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
-/* Geral */
+
 h2 {
     text-align: center;
 }
@@ -322,14 +322,14 @@ footer {
 
 footer {
     position: relative;
-    z-index: 1; /* Certifique-se de que o footer está acima de outros elementos */
+    z-index: 1; /
 }
 
 footer a {
-    color: #000; /* Verifique a cor dos links */
-    text-decoration: none; /* Ajuste a decoração dos links se necessário */
+    color: #000; 
+    text-decoration: none; 
 }
 
 footer a:hover {
-    text-decoration: underline; /* Adicione um efeito hover se desejar */
+    text-decoration: underline; 
 }
